@@ -1,0 +1,14 @@
+include/qjson/parser.h
+include/qjson/parserrunnable.h
+include/qjson/qjson_export.h
+include/qjson/qobjecthelper.h
+include/qjson/serializer.h
+include/qjson/serializerrunnable.h
+%%QT_LIBDIR%%/cmake/qjson/QJSONConfig.cmake
+%%QT_LIBDIR%%/cmake/qjson/QJSONConfigVersion.cmake
+%%QT_LIBDIR%%/cmake/qjson/QJSONTargets-%%CMAKE_BUILD_TYPE%%.cmake
+%%QT_LIBDIR%%/cmake/qjson/QJSONTargets.cmake
+%%QT_LIBDIR%%/libqjson.so
+%%QT_LIBDIR%%/libqjson.so.0
+%%QT_LIBDIR%%/libqjson.so.0.8.1
+%%QT_LIBDIR%%data/pkgconfig/QJson.pc

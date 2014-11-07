@@ -1,0 +1,14 @@
+include/dbusmenu-qt5/dbusmenu_config.h
+include/dbusmenu-qt5/dbusmenu_export.h
+include/dbusmenu-qt5/dbusmenu_version.h
+include/dbusmenu-qt5/dbusmenuadaptor.h
+include/dbusmenu-qt5/dbusmenuexporter.h
+include/dbusmenu-qt5/dbusmenuimporter.h
+%%QT_LIBDIR%%/cmake/dbusmenu-qt5/dbusmenu-qt5-config-version.cmake
+%%QT_LIBDIR%%/cmake/dbusmenu-qt5/dbusmenu-qt5-config.cmake
+%%QT_LIBDIR%%/cmake/dbusmenu-qt5/dbusmenu-qt5-targets-%%CMAKE_BUILD_TYPE%%.cmake
+%%QT_LIBDIR%%/cmake/dbusmenu-qt5/dbusmenu-qt5-targets.cmake
+%%QT_LIBDIR%%/libdbusmenu-qt5.so
+%%QT_LIBDIR%%/libdbusmenu-qt5.so.2
+%%QT_LIBDIR%%/libdbusmenu-qt5.so.2.6.0
+%%QT_LIBDIR%%/pkgconfig/dbusmenu-qt5.pc

@@ -1,0 +1,7 @@
+--- ./ksmserver/screenlocker/greeter/CMakeLists.txt.orig	2014-07-10 18:30:26.000000000 +0200
++++ ./ksmserver/screenlocker/greeter/CMakeLists.txt	2014-07-18 07:21:22.000000000 +0200
+@@ -41,4 +41,3 @@
+ 
+ install(DIRECTORY themes/org.kde.passworddialog DESTINATION ${DATA_INSTALL_DIR}/ksmserver/screenlocker)
+ 
+-add_subdirectory(autotests)

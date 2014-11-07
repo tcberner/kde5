@@ -1,0 +1,21 @@
+#
+# Collect stuff shared over [nearly] all kde5-plasma ports in one location
+#
+
+PKGNAMEPREFIX?=		kde5-
+MAINTAINER?=		kde@FreeBSD.org
+
+PORTVERSION=		${KDE5_VERSION}${KDE5_REVISION}
+DISTNAME=		${PORTNAME}-${PORTVERSION}
+PKGNAMEPREFIX=		kde5-
+
+WRKSRC?=		${WRKDIR}/${PORTNAME}-${KDE5_VERSION}
+MASTER_SITES=		${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	${KDE5_BRANCH}/plasma/${KDE5_VERSION}
+DIST_SUBDIR=		KDE/plasma/${KDE5_VERSION}
+
+
+USES+=			cmake tar:xz
+USE_LDCONFIG=		yes
+
+

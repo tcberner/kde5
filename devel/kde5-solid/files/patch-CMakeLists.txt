@@ -1,0 +1,10 @@
+--- ./CMakeLists.txt.orig	2014-07-04 22:19:20.000000000 +0200
++++ ./CMakeLists.txt	2014-07-17 13:26:01.000000000 +0200
+@@ -60,7 +60,6 @@
+ add_feature_info(Solid::PowerManagement WITH_NEW_POWER_ASYNC_API "WIP: Asynchronous API for power management")
+ 
+ add_subdirectory(src)
+-add_subdirectory(autotests)
+ 
+ # create a Config.cmake and a ConfigVersion.cmake file and install them
+ set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5Solid")

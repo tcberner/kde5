@@ -1,0 +1,10 @@
+--- src/kdeinit/CMakeLists.txt.orig	2014-10-04 17:06:15 UTC
++++ src/kdeinit/CMakeLists.txt
+@@ -37,6 +37,7 @@
+ 
+ if (X11_FOUND)
+   target_link_libraries(kdeinit5 ${X11_X11_LIB})
++  include_directories(SYSTEM "${X11_X11_INCLUDE_PATH}" )
+ endif()
+ 
+ install(TARGETS kdeinit5 ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} )

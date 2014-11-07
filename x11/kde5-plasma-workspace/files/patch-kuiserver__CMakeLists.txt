@@ -1,0 +1,9 @@
+--- ./kuiserver/CMakeLists.txt.orig	2014-07-10 18:30:26.000000000 +0200
++++ ./kuiserver/CMakeLists.txt	2014-07-18 07:21:22.000000000 +0200
+@@ -1,6 +1,5 @@
+ add_definitions(-DTRANSLATION_DOMAIN=\"kuiserver5\")
+ 
+-add_subdirectory( tests )
+ 
+ set(kuiserver_KDEINIT_SRCS
+     main.cpp

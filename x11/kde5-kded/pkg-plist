@@ -1,0 +1,16 @@
+bin/kded5
+%%QT_LIBDIR%%/cmake/KDED/KDEDConfig.cmake
+%%QT_LIBDIR%%/cmake/KDED/KDEDConfigVersion.cmake
+%%QT_LIBDIR%%/cmake/KDED/KDEDTargets-%%CMAKE_BUILD_TYPE%%.cmake
+%%QT_LIBDIR%%/cmake/KDED/KDEDTargets.cmake
+%%QT_LIBDIR%%/libkdeinit5_kded5.so
+share/dbus-1/interfaces/org.kde.kded5.xml
+share/dbus-1/services/org.kde.kded5.service
+share/kservicetypes5/kdedmodule.desktop
+share/man/it/man8/kded5.8
+share/man/man8/kded5.8
+share/man/nl/man8/kded5.8
+share/man/pt_BR/man8/kded5.8
+share/man/ru/man8/kded5.8
+share/man/sv/man8/kded5.8
+share/man/uk/man8/kded5.8

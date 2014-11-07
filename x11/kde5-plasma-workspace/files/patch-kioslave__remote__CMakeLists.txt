@@ -1,0 +1,8 @@
+--- ./kioslave/remote/CMakeLists.txt.orig	2014-07-10 18:30:26.000000000 +0200
++++ ./kioslave/remote/CMakeLists.txt	2014-07-18 07:21:22.000000000 +0200
+@@ -1,5 +1,4 @@
+ add_subdirectory( kdedmodule ) 
+-add_subdirectory( tests ) 
+ 
+ add_library(kio_remote MODULE kio_remote.cpp remoteimpl.cpp)
+ target_link_libraries(kio_remote  KF5::KIOCore KF5::KDELibs4Support)

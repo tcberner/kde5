@@ -1,0 +1,10 @@
+--- src/klauncher/CMakeLists.txt.orig	2014-10-23 18:13:45 UTC
++++ src/klauncher/CMakeLists.txt
+@@ -23,6 +23,7 @@
+    KF5::I18n   # i18n()
+    Qt5::DBus
+ )
++include_directories(SYSTEM "${X11_X11_INCLUDE_PATH}" ) 
+ 
+ install(TARGETS kdeinit_klauncher ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+ install(TARGETS klauncher DESTINATION ${CMAKE_INSTALL_FULL_LIBEXECDIR_KF5} )

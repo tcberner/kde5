@@ -54,7 +54,9 @@ include/taskmanager/tasksmodel.h
 %%QT_LIBDIR%%/libKF5XmlRpcClientPrivate.so.4.70.0
 %%QT_LIBDIR%%/libKF5XmlRpcClientPrivate.so.5
 %%QT_LIBDIR%%/libexec/drkonqi
+@mode 4555
 %%QT_LIBDIR%%/libexec/kcheckpass
+@mode
 %%QT_LIBDIR%%/libexec/kscreenlocker_greet
 %%QT_LIBDIR%%/libexec/ksyncdbusenv
 %%QT_LIBDIR%%/libkdeinit5_kcminit.so

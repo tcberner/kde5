@@ -21,6 +21,8 @@ include/KF5/KCoreAddons/KRandomSequence
 include/KF5/KCoreAddons/KSharedDataCache
 include/KF5/KCoreAddons/KShell
 include/KF5/KCoreAddons/KStringHandler
+include/KF5/KCoreAddons/KTextToHTML
+include/KF5/KCoreAddons/KTextToHTMLEmoticonsInterface
 include/KF5/KCoreAddons/KUrlMimeData
 include/KF5/KCoreAddons/KUser
 include/KF5/KCoreAddons/Kde%%QT_LIBDIR%%s4ConfigMigrator
@@ -50,6 +52,8 @@ include/KF5/KCoreAddons/krandomsequence.h
 include/KF5/KCoreAddons/kshareddatacache.h
 include/KF5/KCoreAddons/kshell.h
 include/KF5/KCoreAddons/kstringhandler.h
+include/KF5/KCoreAddons/ktexttohtml.h
+include/KF5/KCoreAddons/ktexttohtmlemoticonsinterface.h
 include/KF5/KCoreAddons/kurlmimedata.h
 include/KF5/KCoreAddons/kuser.h
 include/KF5/kcoreaddons_version.h

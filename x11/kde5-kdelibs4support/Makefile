@@ -2,7 +2,7 @@
 
 PORTNAME=	kdelibs4support
 CATEGORIES=	x11 # kde-framework
-CONFLICTS=	kdelibs4.*
+#CONFLICTS=	kdelibs4.*
 COMMENT=	KDE5 kdelibs4 porting helpers
 MASTER_SITE_SUBDIR?=    stable/frameworks/${KDE5_FRAMEWORKS_VERSION:R}/portingAids
 

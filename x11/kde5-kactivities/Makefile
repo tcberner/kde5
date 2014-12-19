@@ -13,7 +13,7 @@ USE_KDE5=       kdeprefix dbusaddons auth codecs guiaddons widgetsaddons   \
                 kio ecm config coreaddons i18n service windowsystem        \
 		declarative kcmutils
 
-USES=		cmake:outsource
+USES=		cmake:outsource tar:xz
 
 # hopefully fix crash -- TODO: still necessary?
 CXXFLAGS+=      -fno-use-cxa-atexit

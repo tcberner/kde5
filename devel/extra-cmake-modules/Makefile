@@ -7,7 +7,7 @@ COMMENT=	Extra Modules for Cmake
 
 USE_KDE5=	kdeprefix 
 
-USES=		cmake:outsource
+USES=		cmake:outsource tar:xz
 
 CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF 	\
 		-DQT4_BUILD:BOOL=OFF		\

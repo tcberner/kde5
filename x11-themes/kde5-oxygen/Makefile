@@ -1,9 +1,8 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=       oxygen
-PORTVERSION=    ${KDE5_VERSION}${KDE5_REVISION}
-WRKSRC=         ${WRKDIR}/${PORTNAME}-${PORTVERSION}
-CATEGORIES=     x11-themes kde-plasma
+PORTVERSION=    ${KDE5_VERSION}
+CATEGORIES=     x11-themes # kde-plasma
 COMMENT=        KDE5 oxygen 
 
 USE_QT5=        xml dbus core gui widgets x11extras

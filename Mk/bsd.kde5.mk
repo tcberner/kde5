@@ -36,14 +36,14 @@ Kde5_Pre_Include=	bsd.kde5.mk
 #			          ${LOCALBASE}.
 #
 
-KDE5_VERSION?=			5.1.0
+KDE5_VERSION?=			5.1.1
 KDE5_REVISION?=			.1
 KDE5_BRANCH?=           	stable
 
-KDE5_FRAMEWORKS_VERSION?=	5.4.0
+KDE5_FRAMEWORKS_VERSION?=	5.5.0
 KDE5_FRAMEWORKS_BRANCH?= 	stable
 
-KDE5_ECM_VERSION=		1.4.0   # This could probably go into the ecm-port
+KDE5_ECM_VERSION=		1.5.0   # This could probably go into the ecm-port
 
 KDE5_PREFIX?=			${LOCALBASE}
 
@@ -99,7 +99,7 @@ Kde5_Post_Include=	bsd.kde5.mk
 MAKE_JOBS_UNSAFE=Y
 
 _USE_KDE5_FRAMEWORKS_ALL=	ecm activities archive attica auth	\
-				bookmarks cmutils codecs completion 	\
+				bookmarks kcmutils codecs completion 	\
 				config configwidgets coreaddons 	\
 				crash dbusaddons declarative kded 	\
 				kdelibs4support designerplugin 		\
@@ -110,18 +110,20 @@ _USE_KDE5_FRAMEWORKS_ALL=	ecm activities archive attica auth	\
 				init kcmutils kio itemmodels itemviews 	\
 				jobwidgets js jsembed newstuff		\
 				notifications notifyconfig parts 	\
-				plasma-framework plotting pty ross 	\
+				plasma-framework plotting pty kross 	\
 				runner service solid sonnet 		\
 				texteditor textwidgets threadweaver	\
 				unitconversion wallet widgetsaddons	\
 				windowsystem xmlgui
 _USE_KDE5_PLASMA_ALL=		baloo breeze kde-cli-tools 		\
 				filemetadata helpcenter hotkeys 	\
-				infocenter io-extras libkscreen 	\
-				libksysguard menuedit milou oxygen 	\
-				oxygen-fontsplasma-desktop 		\
+				infocenter kio-extras libkscreen 	\
+				libksysguard kmenuedit milou oxygen 	\
+				oxygen-fonts plasma-desktop 		\
 				plasma-workspace powerdevil 		\
-				sysguard systemsettings kwin writed
+				ksysguard systemsettings kwin kwrited	\
+				icons-oxygen kdeplasma-addons 		\
+				plasma-workspace-wallpapers
 
 _EXTRA_COMPONENTS_ALL=		phonon # this should go to bsd.qt.mk
 
@@ -370,6 +372,17 @@ infocenter_PATH=	${KDE5_PREFIX}/bin/kinfocenter # ?
 oxygen-fonts_PORT=	x11-fonts/kde5-oxygen-fonts
 oxygen-fonts_PATH=	${KDE5_PREFIX}/share/fonts/truetype/oxygen/Oxygen-Sans.ttf
 
+milou_PORT=		deskutils/kde5-milou
+milou_PATH=		${KDE5_PREFIX}/lib/libmilou.so.5
+
+icons-oxygen_PORT=	x11-themes/kde5-icons-oxygen
+icons-oxygen_PATH=	${KDE5_PREFIX}/share/icons/oxygen/index.theme
+
+kdeplasma-addons_PORT=	x11-toolkits/kde5-kdeplasma-addons
+kdeplasma-addons_PATH=	${KDE5_PREFIX}/lib/plugins/kcm_krunner_dictionary.so
+
+plasma-workspace-wallpapers_PORT=	x11-themes/kde5-plasma-workspace-wallpapers
+plasma-workspace-wallpapers_PATH=	${KDE5_PREFIX}/share/wallpapers/Dance_of_the_Spirits/contents/images/1280x1024.jpg
 
 #########################################################################################
 #########################################################################################

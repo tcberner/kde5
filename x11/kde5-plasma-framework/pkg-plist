@@ -164,9 +164,11 @@ include/KF5/plasma_version.h
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/private/TabGroup.js
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/private/TextFieldFocus.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/qmldir
+%%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/BusyIndicatorStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/ButtonStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/CheckBoxStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/ComboBoxStyle.qml
+%%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/ProgressBarStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/RadioButtonStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/ScrollViewStyle.qml
 %%QT_LIBDIR%%/qml/org/kde/plasma/components/styles/SliderStyle.qml
@@ -193,7 +195,8 @@ include/KF5/plasma_version.h
 %%QT_LIBDIR%%/qml/org/kde/plasma/platformcomponents/%%QT_LIBDIR%%platformcomponentsplugin.so
 %%QT_LIBDIR%%/qml/org/kde/plasma/platformcomponents/qmldir
 share/dbus-1/interfaces/org.kde.platformstatus.xml
-share/kservices5/kded/kded_platformstatus.desktop
+share/knotifications5/plasmashell.notifyrc
+share/kservices5/kded/platformstatus.desktop
 share/kservices5/plasma-dataengine-testengine.desktop
 share/kservices5/plasma-scriptengine-applet-declarative.desktop
 share/kservices5/plasma-scriptengine-ruby-dataengine.desktop

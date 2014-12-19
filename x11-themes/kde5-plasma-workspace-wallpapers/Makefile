@@ -1,7 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=	plasma-workspace-wallpapers
-CATEGORIES=	x11-toolkits # kde-framework
+CATEGORIES=	x11-themes # kde-framework
 COMMENT=	KDE5 plasma addons
 
 USE_QT5=        core gui widgets linguisttools uitools

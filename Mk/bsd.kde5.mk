@@ -36,7 +36,7 @@ Kde5_Pre_Include=	bsd.kde5.mk
 #			          ${LOCALBASE}.
 #
 
-KDE5_VERSION?=			5.1.1
+KDE5_VERSION?=			5.1.2
 KDE5_REVISION?=			.1
 KDE5_BRANCH?=           	stable
 

@@ -1,23 +1,23 @@
 # $FreeBSD$
 
-PORTNAME=       qtpaths
-DISTVERSION=    ${QT5_VERSION}
-CATEGORIES=     sysutils
-PKGNAMEPREFIX=  qt5-
+PORTNAME=	qtpaths
+DISTVERSION=	${QT5_VERSION}
+CATEGORIES=	sysutils
+PKGNAMEPREFIX=	qt5-
 
-MAINTAINER=     kde@FreeBSD.org
-COMMENT=        Qt Paths utility
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Command line client to QStandardPaths
 
-USE_QT5=        core buildtools_build xml
-QT_DIST=        tools
-USES=           qmake
+USE_QT5=	core
+QT_DIST=	tools
+USES=		qmake
 
-USE_LDCONFIG=   ${PREFIX}/${QT_LIBDIR_REL}
+PLIST_FILES=	${QT_BINDIR}/qtpaths
 
-BUILD_WRKSRC=   ${WRKSRC}/src/${PORTNAME}
-INSTALL_WRKSRC= ${WRKSRC}/src/${PORTNAME}
-
+# see x11/qt5-qev
+WRKSRC_SUBDIR=	src/${PORTNAME}
+post-patch:
+	${CP} ${WRKSRC}/../../.qmake.conf ${WRKSRC}
 
 .include <bsd.port.mk>
-
 

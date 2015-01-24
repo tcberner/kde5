@@ -1,19 +1,22 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=       baloo
-CATEGORIES=     sysutils # kde-plasma
-COMMENT=        KDE5 baloo 
+PORTNAME=	baloo
+PORTVERSION=	5.5.95
+
+CATEGORIES=	sysutils # kde-plasma
+COMMENT=	KDE5 baloo 
 
 LIB_DEPENDS=	libxapian.so:${PORTSDIR}/databases/xapian-core
 
-USE_QT5=        xml network printsupport core gui widgets dbus sql
-USE_KDE5=       kdeprefix coreaddons dbusaddons codecs guiaddons widgetsaddons\
-                configwidgets itemviews iconthemes globalaccel completion \
-                windowsystem sonnet textwidgets attica xmlgui bookmarks \
-                jobwidgets designerplugin archive doctools emoticons itemmodels \
-                init notifications parts unitconversion ecm i18n config service\
-                idletime kcmutils auth crash solid kio kdelibs4support filemetadata
-                
+USE_QT5=	core dbus gui network printsupport sql widgets xml
+USE_KDE5=	archive attica auth bookmarks codecs completion config \
+		configwidgets coreaddons crash dbusaddons designerplugin \
+		doctools ecm emoticons filemetadata globalaccel guiaddons \
+		i18n iconthemes idletime init itemmodels itemviews \
+		jobwidgets kcmutils kdelibs4support kdeprefix kio \
+		notifications parts service solid sonnet textwidgets \
+		unitconversion widgetsaddons windowsystem xmlgui
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

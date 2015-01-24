@@ -1,14 +1,6 @@
---- src/usermetadata.cpp.orig	2014-10-09 11:53:16 UTC
+--- src/usermetadata.cpp.orig	2015-01-16 09:37:21 UTC
 +++ src/usermetadata.cpp
-@@ -19,6 +19,7 @@
- 
- #include "usermetadata.h"
- #include "xattr_p.h"
-+#include <errno.h>
- 
- #include <QSet>
- 
-@@ -137,7 +138,7 @@
+@@ -138,7 +138,7 @@ bool UserMetaData::hasAttribute(const QS
  {
      k_getxattr(d->filePath, QStringLiteral("user") + key, 0);
  

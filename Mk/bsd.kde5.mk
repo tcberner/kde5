@@ -36,14 +36,14 @@ Kde5_Pre_Include=	bsd.kde5.mk
 #			          ${LOCALBASE}.
 #
 
-KDE5_VERSION?=			5.1.2
-KDE5_REVISION?=			.1
-KDE5_BRANCH?=           	stable
+KDE5_VERSION?=			5.1.95
+#KDE5_REVISION?=			.1
+KDE5_BRANCH?=           	unstable
 
-KDE5_FRAMEWORKS_VERSION?=	5.5.0
+KDE5_FRAMEWORKS_VERSION?=	5.6.0
 KDE5_FRAMEWORKS_BRANCH?= 	stable
 
-KDE5_ECM_VERSION=		1.5.0   # This could probably go into the ecm-port
+KDE5_ECM_VERSION=		1.6.0   # This could probably go into the ecm-port
 
 KDE5_PREFIX?=			${LOCALBASE}
 
@@ -108,14 +108,14 @@ _USE_KDE5_FRAMEWORKS_ALL=	ecm activities archive attica auth	\
 				globalaccel guiaddons khtml i18n 	\
 				iconthemes idletime imageformats 	\
 				init kcmutils kio itemmodels itemviews 	\
-				jobwidgets js jsembed newstuff		\
+				jobwidgets js jsembed kpackage newstuff \
 				notifications notifyconfig parts 	\
 				plasma-framework plotting pty kross 	\
 				runner service solid sonnet 		\
 				texteditor textwidgets threadweaver	\
 				unitconversion wallet widgetsaddons	\
 				windowsystem xmlgui
-_USE_KDE5_PLASMA_ALL=		baloo breeze kde-cli-tools 		\
+_USE_KDE5_PLASMA_ALL=		baloo breeze decoration kde-cli-tools 	\
 				filemetadata helpcenter hotkeys 	\
 				infocenter kio-extras libkscreen 	\
 				libksysguard kmenuedit milou oxygen 	\
@@ -123,7 +123,7 @@ _USE_KDE5_PLASMA_ALL=		baloo breeze kde-cli-tools 		\
 				plasma-workspace powerdevil 		\
 				ksysguard systemsettings kwin kwrited	\
 				icons-oxygen kdeplasma-addons 		\
-				plasma-workspace-wallpapers
+				plasma-workspace-wallpapers wayland
 
 _EXTRA_COMPONENTS_ALL=		phonon # this should go to bsd.qt.mk
 
@@ -134,11 +134,14 @@ _USE_KDE5_ALL=			kdeprefix			\
                    
   
 
-ecm_PORT=		devel/extra-cmake-modules
+ecm_PORT=		devel/kde5-extra-cmake-modules
 ecm_PATH=		${KDE5_PREFIX}/share/ECM/cmake/ECMConfig.cmake
 			
 attica_PORT=		x11-toolkits/kde5-attica
 attica_PATH=		${KDE5_PREFIX}/lib/libKF5Attica.so
+
+kpackage_PORT=          devel/kde5-kpackage
+kpackage_PATH=          ${KDE5_PREFIX}/lib/libKF5Package.so
 
 config_PORT=		devel/kde5-kconfig
 config_PATH=		${KDE5_PREFIX}/lib/libKF5ConfigCore.so
@@ -316,7 +319,7 @@ libksysguard_PORT=	sysutils/kde5-libksysguard
 libksysguard_PATH=	${KDE5_PREFIX}/lib/libksgrd.so
 
 baloo_PORT=		sysutils/kde5-baloo
-baloo_PATH=		${KDE5_PREFIX}/lib/libKF5BalooCore.so
+baloo_PATH=		${KDE5_PREFIX}/lib/libKF5Baloo.so
 
 kwin_PORT=              x11-wm/kde5-kwin
 kwin_PATH=              ${KDE5_PREFIX}/bin/kwin_x11
@@ -331,7 +334,7 @@ kde-cli-tools_PORT=	sysutils/kde5-kde-cli-tools
 kde-cli-tools_PATH=	${KDE5_PREFIX}/bin/kcmshell5
 
 kio-extras_PORT=	devel/kde5-kio-extras
-kio-extras_PATH=	${KDE5_PREFIX}/lib/libmolletnetwork.so
+kio-extras_PATH=	${KDE5_PREFIX}/lib/libmolletnetwork.so.5
 
 breeze_PORT=		x11-themes/kde5-breeze
 breeze_PATH=		${KDE5_PREFIX}/share/QtCurve/Breeze.qtcurve
@@ -375,7 +378,7 @@ oxygen-fonts_PATH=	${KDE5_PREFIX}/share/fonts/truetype/oxygen/Oxygen-Sans.ttf
 milou_PORT=		deskutils/kde5-milou
 milou_PATH=		${KDE5_PREFIX}/lib/libmilou.so.5
 
-icons-oxygen_PORT=	x11-themes/kde5-icons-oxygen
+icons-oxygen_PORT=	x11-themes/kde4-icons-oxygen
 icons-oxygen_PATH=	${KDE5_PREFIX}/share/icons/oxygen/index.theme
 
 kdeplasma-addons_PORT=	x11-toolkits/kde5-kdeplasma-addons
@@ -383,6 +386,12 @@ kdeplasma-addons_PATH=	${KDE5_PREFIX}/lib/plugins/kcm_krunner_dictionary.so
 
 plasma-workspace-wallpapers_PORT=	x11-themes/kde5-plasma-workspace-wallpapers
 plasma-workspace-wallpapers_PATH=	${KDE5_PREFIX}/share/wallpapers/Dance_of_the_Spirits/contents/images/1280x1024.jpg
+
+decoration_PORT=	x11-wm/kde5-kdecoration
+decoration_PATH=	${KDE5_PREFIX}/lib/libkdecorations2.so
+
+wayland_PORT=		x11/kde5-kwayland
+wayland_PATH=		${KDE5_PREFIX}/lib/libKF5WaylandClient.so
 
 #########################################################################################
 #########################################################################################

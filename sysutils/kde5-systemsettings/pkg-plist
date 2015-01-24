@@ -6,10 +6,10 @@ include/systemsettingsview/MenuModel.h
 include/systemsettingsview/MenuProxyModel.h
 include/systemsettingsview/ModuleView.h
 include/systemsettingsview/systemsettingsview_export.h
-%%QT_LIBDIR%%/libsystemsettingsview.so
-%%QT_LIBDIR%%/libsystemsettingsview.so.3
-%%QT_LIBDIR%%/plugins/classic_mode.so
-%%QT_LIBDIR%%/plugins/icon_mode.so
+lib/libsystemsettingsview.so
+lib/libsystemsettingsview.so.3
+lib/plugins/classic_mode.so
+lib/plugins/icon_mode.so
 share/applications/kdesystemsettings.desktop
 share/applications/systemsettings.desktop
 share/doc/HTML/en/systemsettings/index.cache.bz2

@@ -2,8 +2,8 @@ bin/ksysguard
 bin/ksysguardd
 %%ETCDIR%%drc
 %%QT_ETCDIR%%/ksysguard.knsrc
-%%QT_LIBDIR%%/libkdeinit5_ksysguard.so
-share/applications/ksysguard.desktop
+lib/libkdeinit5_ksysguard.so
+share/applications/org.kde.ksysguard.desktop
 share/doc/HTML/en/ksysguard/index.cache.bz2
 share/doc/HTML/en/ksysguard/index.docbook
 share/icons/hicolor/16x16/apps/computer.png

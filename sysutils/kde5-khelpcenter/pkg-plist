@@ -1,11 +1,11 @@
 bin/khelpcenter
-%%QT_LIBDIR%%/libexec/khc_docbookdig.pl
-%%QT_LIBDIR%%/libexec/khc_htdig.pl
-%%QT_LIBDIR%%/libexec/khc_htsearch.pl
-%%QT_LIBDIR%%/libexec/khc_indexbuilder
-%%QT_LIBDIR%%/libexec/khc_mansearch.pl
-%%QT_LIBDIR%%/libkdeinit5_khelpcenter.so
-share/applications/Help.desktop
+lib/libexec/khc_docbookdig.pl
+lib/libexec/khc_htdig.pl
+lib/libexec/khc_htsearch.pl
+lib/libexec/khc_indexbuilder
+lib/libexec/khc_mansearch.pl
+lib/libkdeinit5_khelpcenter.so
+share/applications/org.kde.Help.desktop
 share/config.kcfg/khelpcenter.kcfg
 share/dbus-1/interfaces/org.kde.khelpcenter.kcmhelpcenter.xml
 share/doc/HTML/en/fundamentals/colors.png
@@ -83,6 +83,7 @@ share/doc/HTML/en/khelpcenter/pointers.png
 share/doc/HTML/en/khelpcenter/shadow1.png
 share/doc/HTML/en/onlinehelp/index.cache.bz2
 share/doc/HTML/en/onlinehelp/index.docbook
+share/kde4/services/khelpcenter.desktop
 %%DATADIR%%/glossary.html.in
 %%DATADIR%%/glossary.xslt
 %%DATADIR%%/index.html.in

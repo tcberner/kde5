@@ -1,12 +1,11 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=       extra-cmake-modules
-PORTVERSION=    ${KDE5_ECM_VERSION}
-CATEGORIES=     devel # kde-framework
+PORTNAME=	extra-cmake-modules
+PORTVERSION=	${KDE5_ECM_VERSION}
+CATEGORIES=	devel # kde-framework
 COMMENT=	Extra Modules for Cmake
 
 USE_KDE5=	kdeprefix 
-
 USES=		cmake:outsource tar:xz
 
 CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF 	\

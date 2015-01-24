@@ -1,16 +1,18 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=       konsole
-CATEGORIES=     sysutils # kde-plasma
-COMMENT=        KDE5 konsole (git version)
+PORTNAME=	konsole
+CATEGORIES=	sysutils # kde-applications
+COMMENT=	KDE5 konsole 
+PKGNAMEPREFIX=	kde5-
 
-USE_QT5=        core dbus gui widgets script scripttools sql 
-USE_KDE5=       kdeprefix ecm xmlgui windowsystem widgetsaddons textwidgets service pty parts notifyconfig notifications kio kdelibs4support init i18n iconthemes
+USE_QT5=	core dbus gui script scripttools sql widgets
+USE_KDE5=	ecm i18n iconthemes init kdelibs4support kdeprefix \
+		kio notifications notifyconfig parts pty service \
+		textwidgets widgetsaddons windowsystem xmlgui
 
-# TODO : fails to add lutil automatically
-LDFLAGS+=-lutil
+# TODO: kinfog_getfile
+LDFLAGS+=	-lutil
 
-.include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-git.mk"
-.include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
+.include "${.CURDIR}/../../x11/kde-applications/bsd.kde-applications.mk"
 .include <bsd.port.mk>
 

@@ -1,5 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
+FORBIDDEN=	Is anyone really using this?
+
 PORTNAME=	libdbusmenu-qt5
 PORTVERSION=	20140619
 CATEGORIES=	devel
@@ -11,11 +13,10 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE5 libdbusmenu-qt
 
 USE_QT5=	core dbus
-USE_KDE5=	kdeprefix ecm
+USE_KDE5=	ecm kdeprefix
 
-LIB_DEPENDS=	libqjson.so.0:${PORTSDIR}/devel/qt5-qjson
-CMAKE_ARGS+=	-DWITH_DOC:BOOL=OFF
-                
+LIB_DEPENDS=	libqjson.so.0:${PORTSDIR}/devel/qt5-qjson 
+
 USE_LDCONFIG=	yes
 USES=		cmake tar:bzip2
 

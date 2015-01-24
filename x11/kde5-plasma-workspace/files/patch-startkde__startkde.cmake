@@ -1,7 +1,7 @@
---- startkde/startkde.cmake.orig	2014-09-16 18:53:51 UTC
+--- startkde/startkde.cmake.orig	2015-01-08 16:28:33 UTC
 +++ startkde/startkde.cmake
 @@ -3,6 +3,24 @@
- #  DEFAULT KDE STARTUP SCRIPT ( @KDE4WORKSPACE_VERSION@ )
+ #  DEFAULT KDE STARTUP SCRIPT ( @PROJECT_VERSION@ )
  #
  
 +# FreeBSD: add ${QTPREFIX}/lib/qt5/bin to path - note, this should be done better
@@ -12,7 +12,7 @@
 +XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS}:/etc/xdg:/usr/local/etc/xdg:/usr/local/etc/xdg/xfce
 +export XDG_CONFIG_DIRS
 +
-+XDG_DATA__DIRS=${XDG_DATA_DIRS}:/usr/share:/usr/local/share:/usr/local/share/gnome
++XDG_DATA_DIRS=${XDG_DATA_DIRS}:/usr/share:/usr/local/share:/usr/local/share/gnome
 +export XDG_DATA_DIRS
 +
 +# FreeBSD: add qml/qt-plugin paths 
@@ -25,3 +25,4 @@
  if test "x$1" = x--failsafe; then
      KDE_FAILSAFE=1 # General failsafe flag
      KWIN_COMPOSE=N # Disable KWin's compositing
+

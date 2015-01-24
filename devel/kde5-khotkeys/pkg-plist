@@ -1,8 +1,8 @@
-%%QT_LIBDIR%%/cmake/KHotKeysDBusInterface/KHotKeysDBusInterfaceConfig.cmake
-%%QT_LIBDIR%%/libkhotkeysprivate.so.5
-%%QT_LIBDIR%%/libkhotkeysprivate.so.%%KDE5_VERSION%%
-%%QT_LIBDIR%%/plugins/kcm_hotkeys.so
-%%QT_LIBDIR%%/plugins/kded_khotkeys.so
+lib/cmake/KHotKeysDBusInterface/KHotKeysDBusInterfaceConfig.cmake
+lib/libkhotkeysprivate.so.5
+lib/libkhotkeysprivate.so.%%KDE5_VERSION%%
+lib/plugins/kcm_hotkeys.so
+lib/plugins/kded_khotkeys.so
 share/dbus-1/interfaces/org.kde.khotkeys.xml
 share/doc/HTML/en/kcontrol/khotkeys/groups-comment.png
 share/doc/HTML/en/kcontrol/khotkeys/index.cache.bz2

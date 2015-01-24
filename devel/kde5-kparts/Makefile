@@ -4,13 +4,12 @@ PORTNAME=	kparts
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 parts
 
-USE_QT5=        core gui widgets xml dbus network
-USE_KDE5=       kdeprefix ecm config coreaddons i18n auth codecs \
-                guiaddons configwidgets itemviews iconthemes     \
-                globalaccel completion dbusaddons windowsystem   \
-                sonnet attica bookmarks solid kio jobwidgets     \
-                notifications service textwidgets widgetsaddons  \
-                xmlgui
-		
+USE_QT5=	core dbus gui network widgets xml
+USE_KDE5=	attica auth bookmarks codecs completion config \
+		configwidgets coreaddons dbusaddons ecm globalaccel \
+		guiaddons i18n iconthemes itemviews jobwidgets kdeprefix \
+		kio notifications service solid sonnet textwidgets \
+		widgetsaddons windowsystem xmlgui
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

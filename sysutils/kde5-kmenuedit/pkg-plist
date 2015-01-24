@@ -1,6 +1,6 @@
 bin/kmenuedit
-%%QT_LIBDIR%%/libkdeinit5_kmenuedit.so
-share/applications/kmenuedit.desktop
+lib/libkdeinit5_kmenuedit.so
+share/applications/org.kde.kmenuedit.desktop
 share/doc/HTML/en/kmenuedit/done.png
 share/doc/HTML/en/kmenuedit/index.cache.bz2
 share/doc/HTML/en/kmenuedit/index.docbook

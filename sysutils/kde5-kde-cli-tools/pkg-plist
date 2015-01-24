@@ -8,10 +8,10 @@ bin/kmimetypefinder5
 bin/kstart5
 bin/ksvgtopng5
 bin/ktraderclient5
-%%QT_LIBDIR%%/libexec/kdeeject
-%%QT_LIBDIR%%/libexec/kdesu
-%%QT_LIBDIR%%/libkdeinit5_kcmshell5.so
-%%QT_LIBDIR%%/plugins/kcm_filetypes.so
+lib/libexec/kdeeject
+lib/libexec/kdesu
+lib/libkdeinit5_kcmshell5.so
+lib/plugins/kcm_filetypes.so
 share/doc/HTML/en/kdesu/index.cache.bz2
 share/doc/HTML/en/kdesu/index.docbook
 share/doc/HTML/en/kdesu/man-kdesu.1.docbook

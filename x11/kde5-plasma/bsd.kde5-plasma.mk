@@ -10,10 +10,15 @@ PORTVERSION?=		${KDE5_VERSION}
 DISTNAME?=		${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX?=		kde5-
 
-WRKSRC?=		${WRKDIR}/${PORTNAME}-${KDE5_VERSION}
+WRKSRC?=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MASTER_SITES?=		${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR?=	${KDE5_BRANCH}/plasma/${KDE5_VERSION}
 DIST_SUBDIR?=		KDE/plasma/${KDE5_VERSION}
 
-USES?=			cmake tar:xz
+# TODO depend on docbook... (option?)
+BUILD_DEPENDS+=		${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:${PORTSDIR}/textproc/docbook-xsl \
+			${LOCALBASE}/share/xml/docbook/4.2:${PORTSDIR}/textproc/docbook-xml
+
+USE_QT5+=		buildtools_build qmake_build
+USES?=			cmake gettext pkgconfig tar:xz
 USE_LDCONFIG?=		yes

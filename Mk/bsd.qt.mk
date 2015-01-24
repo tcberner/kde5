@@ -298,8 +298,7 @@ _USE_QT4_ONLY=	accessible assistant-adp assistantclient codecs-cn codecs-jp \
 
 _USE_QT5_ONLY=	buildtools concurrent core graphicaleffects linguisttools \
 				printsupport qdbus qdoc qev qml quick \
-				quickcontrols serialport uitools widgets x11extras \
-				qtpaths
+				quickcontrols serialport uitools widgets x11extras
 
 accessible_PORT=	accessibility/${_QT_RELNAME}-accessible
 accessible_PATH=	${QT_PLUGINDIR}/accessible/libqtaccessiblewidgets.so
@@ -524,10 +523,6 @@ xmlpatterns_PATH=	${QT_LIBDIR}/libQt${_QT_LIBVER}XmlPatterns.so
 
 xmlpatterns-tool_PORT=	textproc/${_QT_RELNAME}-xmlpatterns-tool
 xmlpatterns-tool_PATH=	${QT_BINDIR}/xmlpatterns
-
-qtpaths_PORT=		sysutils/qt5-qtpaths
-qtpaths_PATH=		${QT_BINDIR}/qtpaths
-
 
 _USE_QT_ALL+=	${_USE_QT${_QT_VERSION:R:R}_ONLY}
 .for comp in ${_USE_QT_ALL}

@@ -3,15 +3,15 @@
 PORTNAME=	krunner
 CATEGORIES=	x11 # kde-framework
 COMMENT=	KDE5 krunner
-MASTER_SITE_SUBDIR?=    stable/frameworks/${KDE5_FRAMEWORKS_VERSION:R}/portingAids
+MASTER_SITE_SUBDIR?=	stable/frameworks/${KDE5_FRAMEWORKS_VERSION:R}/portingAids
 
-USE_QT5=        gui widgets network qml quick xml dbus core
-USE_KDE5=       kdeprefix config coreaddons i18n auth codecs \
-                guiaddons widgetsaddons configwidgets itemviews \
-                iconthemes globalaccel completion dbusaddons \
-                windowsystem sonnet textwidgets attica xmlgui \
-                bookmarks jobwidgets kio service ecm plasma-framework solid \
-                threadweaver
+USE_QT5=	core dbus gui network qml quick widgets xml
+USE_KDE5=	attica auth bookmarks codecs completion config \
+		configwidgets coreaddons dbusaddons ecm globalaccel \
+		guiaddons i18n iconthemes itemviews jobwidgets \
+		kdeprefix kio plasma-framework service solid sonnet \
+		textwidgets threadweaver widgetsaddons windowsystem \
+		xmlgui
 
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

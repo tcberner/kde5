@@ -1,23 +1,31 @@
 # $FreeBSD$
 
 PORTNAME=	phonon
-DISTVERSION=	4.7.2
+DISTVERSION=	4.8.3
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	qt5-
-MASTER_SITES=   KDE/stable/${PORTNAME}/${PORTVERSION}
-DIST_SUBDIR=    KDE
+MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
+DIST_SUBDIR=	KDE
 
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt5 bindings for phonon
 
-USE_QT5=	assistant_run core gui network printsupport webkit \
-		widgets xml buildtools_build
-USE_KDE5=	kdeprefix
+USE_QT5=	buildtools_build core dbus declarative gui qmake_build widgets 
 
 USES=		cmake tar:xz
-CMAKE_ARGS=     -DPHONON_BUILD_PHONON4QT5=ON
+CMAKE_ARGS=	-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT:BOOL=TRUE \
+		-DPHONON_NO_PLATFORMPLUGIN:BOOL=TRUE \
+		-DPHONON_BUILD_DESIGNER_PLUGIN:BOOL=OFF \
+		-DPHONON_BUILD_PHONON4QT5=ON
 
 USE_LDCONFIG=	yes
+
+OPTIONS_DEFINE=	PULSEAUDIO
+
+PULSEAUDIO_LIB_DEPENDS=	libpulse.so:${PORTSDIR}/audio/pulseaudio
+PULSEAUDIO_USE=		GNOME=glib20
+PULSEAUDIO_CMAKE_ON=	-DWITH_PulseAudio:BOOL=ON
+PULSEAUDIO_CMAKE_OFF=	-DWITH_PulseAudio:BOOL=OFF
 
 .include <bsd.port.mk>

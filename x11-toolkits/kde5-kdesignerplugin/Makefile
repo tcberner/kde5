@@ -4,14 +4,13 @@ PORTNAME=	kdesignerplugin
 CATEGORIES=	x11-toolkits # kde-framework
 COMMENT=	KDE5 designerplugin
 
-USE_QT5=        gui xml designer dbus network qml quick opengl \
-                printsupport webkit core linguisttools 
-USE_KDE5=       kdeprefix completion auth codecs guiaddons i18n \
-                configwidgets iconthemes globalaccel dbusaddons \
-                service windowsystem attica bookmarks jobwidgets\
-                solid kio itemviews plotting textwidgets \
-                widgetsaddons xmlgui sonnet kdewebkit ecm coreaddons\
-                config archive doctools
-		
+USE_QT5=	core dbus designer gui linguisttools network opengl \
+		printsupport qml quick webkit xml
+USE_KDE5=	archive attica auth bookmarks codecs completion config \
+		configwidgets coreaddons dbusaddons doctools ecm globalaccel \
+		guiaddons i18n iconthemes itemviews jobwidgets kdeprefix \
+		kdewebkit kio plotting service solid sonnet textwidgets \
+		widgetsaddons windowsystem xmlgui
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

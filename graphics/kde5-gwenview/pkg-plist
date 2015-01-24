@@ -1,7 +1,7 @@
 bin/gwenview
-%%QT_LIBDIR%%/libgwenview%%QT_LIBDIR%%.so.4.97.0
-%%QT_LIBDIR%%/libgwenview%%QT_LIBDIR%%.so.5
-%%QT_LIBDIR%%/plugins/gvpart.so
+lib/libgwenviewlib.so.4.97.0
+lib/libgwenviewlib.so.5
+lib/plugins/gvpart.so
 share/appdata/gwenview.appdata.xml
 share/applications/gwenview.desktop
 share/doc/HTML/en/gwenview/browse_mode.png

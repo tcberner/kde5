@@ -1,23 +1,26 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=       kwin
-CATEGORIES=     x11-wm # kde-plasma
-COMMENT=        KDE5 kwin 
+PORTNAME=	kwin
+CATEGORIES=	x11-wm # kde-plasma
+COMMENT=	KDE5 kwin 
 
 LIB_DEPENDS=	libEGL.so.1:${PORTSDIR}/graphics/libEGL \
 		libXcursor.so.1:${PORTSDIR}/x11/libXcursor \
 		libepoxy.so:${PORTSDIR}/graphics/libepoxy
 
-USE_QT5=        xml concurrent dbus network qml gui quick script uitools \
-                widgets x11extras core multimedia
-USE_KDE5=       kdeprefix activities doctools auth codecs guiaddons  \
-                dbusaddons itemviews iconthemes sonnet textwidgets   \
-                attica bookmarks jobwidgets solid archive activities \
-                doctools config configwidgets coreaddons crash       \
-                globalaccel i18n init notifications service ecm      \
-                plasma-framework widgetsaddons windowsystem completion         \
-                declarative kcmutils kio newstuff xmlgui
-                
+BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:${PORTSDIR}/multimedia/v4l_compat
+
+USE_QT5=	concurrent core dbus gui multimedia network qml \
+		quick script uitools widgets x11extras xml
+USE_KDE5=	activities archive attica auth bookmarks codecs \
+		completion config configwidgets coreaddons crash \
+		dbusaddons declarative decoration doctools ecm \
+		globalaccel guiaddons i18n iconthemes init \
+		itemviews jobwidgets kcmutils kdeprefix kio \
+		newstuff notifications plasma-framework service \
+		solid sonnet textwidgets wayland widgetsaddons \
+		windowsystem xmlgui
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

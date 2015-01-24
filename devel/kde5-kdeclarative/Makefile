@@ -4,12 +4,11 @@ PORTNAME=	kdeclarative
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 declarative
 
-USE_QT5=        xml widgets dbus core network qml quick gui
-USE_KDE5=       kdeprefix config i18n auth codecs configwidgets   \
-                itemviews iconthemes completion dbusaddons service\
-                sonnet textwidgets attica xmlgui bookmarks jobwidgets \
-                solid kio widgetsaddons windowsystem globalaccel \
-                coreaddons guiaddons ecm
-		
+USE_QT5=	core dbus gui network qml quick widgets xml
+USE_KDE5=	attica auth bookmarks codecs completion config configwidgets \
+		coreaddons dbusaddons ecm globalaccel guiaddons i18n \
+		iconthemes itemviews jobwidgets kdeprefix kio service solid \
+		sonnet textwidgets widgetsaddons windowsystem xmlgui
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

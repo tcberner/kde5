@@ -1,5 +1,5 @@
-%%QT_LIBDIR%%/cmake/OxygenFont/OxygenFontConfig.cmake
-%%QT_LIBDIR%%/cmake/OxygenFont/OxygenFontConfigVersion.cmake
+lib/cmake/OxygenFont/OxygenFontConfig.cmake
+lib/cmake/OxygenFont/OxygenFontConfigVersion.cmake
 share/fonts/truetype/oxygen/Oxygen-Sans-Bold.ttf
 share/fonts/truetype/oxygen/Oxygen-Sans.ttf
 share/fonts/truetype/oxygen/OxygenMono-Regular.ttf

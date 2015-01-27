@@ -378,7 +378,7 @@ oxygen-fonts_PATH=	${KDE5_PREFIX}/share/fonts/truetype/oxygen/Oxygen-Sans.ttf
 milou_PORT=		deskutils/kde5-milou
 milou_PATH=		${KDE5_PREFIX}/lib/libmilou.so.5
 
-icons-oxygen_PORT=	x11-themes/kde4-icons-oxygen
+icons-oxygen_PORT=	x11-themes/kde-icons-oxygen
 icons-oxygen_PATH=	${KDE5_PREFIX}/share/icons/oxygen/index.theme
 
 kdeplasma-addons_PORT=	x11-toolkits/kde5-kdeplasma-addons

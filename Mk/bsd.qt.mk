@@ -297,7 +297,7 @@ _USE_QT4_ONLY=	accessible assistant-adp assistantclient codecs-cn codecs-jp \
 				qtestlib qvfb rcc uic uic3 xmlpatterns-tool
 
 _USE_QT5_ONLY=	buildtools concurrent core graphicaleffects linguisttools \
-				printsupport qdbus qdoc qev qml quick \
+				phonon5 paths printsupport qdbus qdoc qev qml quick \
 				quickcontrols serialport uitools widgets x11extras
 
 accessible_PORT=	accessibility/${_QT_RELNAME}-accessible
@@ -405,11 +405,17 @@ opengl_PATH=		${QT_LIBDIR}/libQt${_QT_LIBVER}OpenGL.so
 pixeltool_PORT=		graphics/${_QT_RELNAME}-pixeltool
 pixeltool_PATH=		${QT_BINDIR}/pixeltool
 
+paths_PORT=			sysutils/qt5-qtpaths
+paths_PATH=			${QT_BINDIR}/qtpaths
+
 phonon_PORT=		multimedia/phonon
 phonon_PATH=		${QT_LIBDIR}/libphonon.so
 
 phonon-gst_PORT=	multimedia/phonon-gstreamer
 phonon-gst_PATH=	${QT_PLUGINDIR}/phonon_backend/libphonon_gstreamer.so
+
+phonon5_PORT=		multimedia/qt5-phonon
+phonon5_PATH=		${QT_LIBDIR}/libphonon4qt5.so
 
 porting_PORT=		devel/${_QT_RELNAME}-porting
 porting_PATH=		${QT_BINDIR}/qt3to4

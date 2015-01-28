@@ -22,3 +22,10 @@ BUILD_DEPENDS+=		${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:${PORTSDIR}/tex
 USE_QT5+=		buildtools_build qmake_build
 USES?=			cmake gettext pkgconfig tar:xz
 USE_LDCONFIG?=		yes
+
+# auth installs a cmake file with a target containing whitespaces
+# we need to switch to gmake for these ports
+.if ${USE_KDE5:Mauth}     
+USES+=			gmake
+.endif
+

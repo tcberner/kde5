@@ -6,7 +6,7 @@ COMMENT=	KDE5 gwenview
 PKGNAMEPREFIX=	kde5-
 
 USE_QT5=	buildtools_build core dbus qmake_build
-USE_KDE5=	ecm kdelibs4support kdeprefix kdeprefix
+USE_KDE5=	activities ecm emoticons init itemmodels kdelibs4support kdeprefix kdeprefix
 
 
 LIB_DEPENDS=	libexiv2.so:${PORTSDIR}/graphics/exiv2 \

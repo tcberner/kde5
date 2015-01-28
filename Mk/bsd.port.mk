@@ -1475,7 +1475,8 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .if defined(USE_KDE4) || defined(KDE4_BUILDENV)
 .include "${PORTSDIR}/Mk/bsd.kde4.mk"
 .endif
-.if defined(USE_KDE5) | defined(KDE5_BUILDENV)
+
+.if defined(USE_KDE5) || defined(KDE5_BUILDENV)
 .include "${PORTSDIR}/Mk/bsd.kde5.mk"
 .endif
 
@@ -1912,6 +1913,7 @@ _FORCE_POST_PATTERNS=	rmdir kldxref mkfontscale mkfontdir fc-cache \
 .if defined(USE_KDE4)
 .include "${PORTSDIR}/Mk/bsd.kde4.mk"
 .endif
+
 .if defined(USE_KDE5)
 .include "${PORTSDIR}/Mk/bsd.kde5.mk"
 .endif

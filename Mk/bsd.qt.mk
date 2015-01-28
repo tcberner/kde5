@@ -297,7 +297,7 @@ _USE_QT4_ONLY=	accessible assistant-adp assistantclient codecs-cn codecs-jp \
 				qtestlib qvfb rcc uic uic3 xmlpatterns-tool
 
 _USE_QT5_ONLY=	buildtools concurrent core graphicaleffects linguisttools \
-				phonon5 paths printsupport qdbus qdoc qev qml quick \
+				paths phonon5 polkit5 printsupport qdbus qdoc qev qml quick \
 				quickcontrols serialport uitools widgets x11extras
 
 accessible_PORT=	accessibility/${_QT_RELNAME}-accessible
@@ -416,6 +416,9 @@ phonon-gst_PATH=	${QT_PLUGINDIR}/phonon_backend/libphonon_gstreamer.so
 
 phonon5_PORT=		multimedia/qt5-phonon
 phonon5_PATH=		${QT_LIBDIR}/libphonon4qt5.so
+
+polkit5_PORT=		sysutils/polkit-qt5
+polkit5_PATH=		${QT_LIBDIR}/libpolkit-qt5-core-1.so
 
 porting_PORT=		devel/${_QT_RELNAME}-porting
 porting_PATH=		${QT_BINDIR}/qt3to4

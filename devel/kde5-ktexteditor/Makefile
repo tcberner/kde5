@@ -4,6 +4,9 @@ PORTNAME=	ktexteditor
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 texteditor 
 
+
+LIB_DEPENDS=	libgit2.so:${PORTSDIR}/devel/libgit2
+
 USE_QT5=	core dbus gui network printsupport script widgets xml
 USE_KDE5=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons dbusaddons ecm globalaccel \

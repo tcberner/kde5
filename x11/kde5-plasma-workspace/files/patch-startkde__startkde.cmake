@@ -5,7 +5,7 @@
  #
  
 +# FreeBSD: add ${QTPREFIX}/lib/qt5/bin to path - note, this should be done better
-+PATH=/usr/local/lib/qt5/bin:${PATH}
++PATH=${PATH}:/usr/local/lib/qt5/bin
 +export PATH
 +
 +# FreeBSD: add xdg-dirs (see misc/kde4-xdg-env)

@@ -15,7 +15,7 @@ RUN_DEPENDS=	iceauth:${PORTSDIR}/x11/iceauth \
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE5 plasma-workspace 
 
-USE_QT5=	core dbus gui network qdbus qml qtpaths quick \
+USE_QT5=	core dbus gui network qdbus qml paths quick \
 		quickcontrols script scripttools widgets xml
 USE_KDE5=	attica auth baloo bookmarks codecs completion \
 		config configwidgets coreaddons dbusaddons ecm \

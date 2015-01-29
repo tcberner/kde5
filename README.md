@@ -8,4 +8,4 @@ kate, gwenview and konsole from kde-applications 14.12
 
 
 Note 
-  * I use qt5 with DEBUG flags. There seem to be crashes when used the standard qt5 build (needs some investigation).
+  * I use qt5 with DEBUG flags. There seem to be crashes when used the standard qt5 build (needs some investigation). The newest lang/qt5-qml seems to fix this.

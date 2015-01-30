@@ -1,7 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=	baloo
-PORTVERSION=	5.5.95
+PORTVERSION=	5.6.0
 
 CATEGORIES=	sysutils # kde-plasma
 COMMENT=	KDE5 baloo 

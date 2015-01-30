@@ -36,9 +36,8 @@ Kde5_Pre_Include=	bsd.kde5.mk
 #			          ${LOCALBASE}.
 #
 
-KDE5_VERSION?=			5.1.95
-#KDE5_REVISION?=			.1
-KDE5_BRANCH?=           	unstable
+KDE5_VERSION?=			5.2.0
+KDE5_BRANCH?=           	stable
 
 KDE5_FRAMEWORKS_VERSION?=	5.6.0
 KDE5_FRAMEWORKS_BRANCH?= 	stable
@@ -124,8 +123,6 @@ _USE_KDE5_PLASMA_ALL=		baloo breeze decoration kde-cli-tools 	\
 				ksysguard systemsettings kwin kwrited	\
 				icons-oxygen kdeplasma-addons 		\
 				plasma-workspace-wallpapers wayland
-
-_EXTRA_COMPONENTS_ALL=		phonon # this should go to bsd.qt.mk
 
 _USE_KDE5_ALL=			kdeprefix			\
 				${_USE_KDE5_FRAMEWORKS_ALL} 	\
@@ -214,10 +211,6 @@ xmlgui_PATH=		${KDE5_PREFIX}/lib/libKF5XmlGui.so
 
 bookmarks_PORT=		devel/kde5-kbookmarks
 bookmarks_PATH=		${KDE5_PREFIX}/lib/libKF5Bookmarks.so
-
-# TODO: this should be handled as a qt5-component
-phonon_PORT=		multimedia/qt5-phonon
-phonon_PATH=		${LOCALBASE}/lib/libphonon4qt5.so
 
 notifications_PORT=	devel/kde5-knotifications
 notifications_PATH=	${KDE5_PREFIX}/lib/libKF5Notifications.so

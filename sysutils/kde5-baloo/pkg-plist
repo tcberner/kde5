@@ -32,10 +32,10 @@ lib/cmake/KF5Baloo/KF5BalooTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KF5Baloo/KF5BalooTargets.cmake
 lib/libKF5Baloo.so
 lib/libKF5Baloo.so.1
-lib/libKF5Baloo.so.5.5.95
+lib/libKF5Baloo.so.5.6.0
 lib/libKF5BalooXapian.so
 lib/libKF5BalooXapian.so.1
-lib/libKF5BalooXapian.so.5.5.95
+lib/libKF5BalooXapian.so.5.6.0
 lib/libexec/kauth/kde_baloo_filewatch_raiselimit
 lib/plugins/kded_baloosearch_kio.so
 lib/plugins/kf5/kio/baloosearch.so

@@ -20,7 +20,7 @@ USE_QT5=	core dbus gui network qdbus qml paths quick \
 USE_KDE5=	attica auth baloo bookmarks codecs completion \
 		config configwidgets coreaddons dbusaddons ecm \
 		globalaccel guiaddons i18n iconthemes idletime \
-		itemviews jobwidgets jsembed kdeprefix kdesu kio \
+		itemviews jobwidgets jsembed kdeprefix kded kdesu kio \
 		ksysguard kwin libkscreen notifyconfig plasma-framework \
 		runner service solid sonnet texteditor textwidgets \
 		threadweaver wayland widgetsaddons windowsystem \

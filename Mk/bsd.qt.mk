@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.qt.mk 372179 2014-11-05 09:39:21Z rakuco $
+# $FreeBSD: head/Mk/bsd.qt.mk 378033 2015-01-28 01:15:22Z rakuco $
 #
 # Port variables:
 # USE_QT*			- List of Qt modules to depend on, with optional '_build'
@@ -402,11 +402,11 @@ network_PATH=		${QT_LIBDIR}/libQt${_QT_LIBVER}Network.so
 opengl_PORT=		graphics/${_QT_RELNAME}-opengl
 opengl_PATH=		${QT_LIBDIR}/libQt${_QT_LIBVER}OpenGL.so
 
+paths_PORT=		sysutils/qt5-qtpaths
+paths_PATH=		${QT_BINDIR}/qtpaths
+
 pixeltool_PORT=		graphics/${_QT_RELNAME}-pixeltool
 pixeltool_PATH=		${QT_BINDIR}/pixeltool
-
-paths_PORT=			sysutils/qt5-qtpaths
-paths_PATH=			${QT_BINDIR}/qtpaths
 
 phonon_PORT=		multimedia/phonon
 phonon_PATH=		${QT_LIBDIR}/libphonon.so

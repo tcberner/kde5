@@ -24,8 +24,8 @@ lib/cmake/KF5FileMetaData/KF5FileMetaDataConfigVersion.cmake
 lib/cmake/KF5FileMetaData/KF5FileMetaDataTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KF5FileMetaData/KF5FileMetaDataTargets.cmake
 lib/libKF5FileMetaData.so
-lib/libKF5FileMetaData.so.2
-lib/libKF5FileMetaData.so.5.5.95
+lib/libKF5FileMetaData.so.3
+lib/libKF5FileMetaData.so.%%KDE5_FRAMEWORKS_VERSION%%
 lib/plugins/kf5/kfilemetadata/kfilemetadata_epubextractor.so
 lib/plugins/kf5/kfilemetadata/kfilemetadata_exiv2extractor.so
 lib/plugins/kf5/kfilemetadata/kfilemetadata_ffmpegextractor.so
@@ -36,6 +36,7 @@ lib/plugins/kf5/kfilemetadata/kfilemetadata_plaintextextractor.so
 lib/plugins/kf5/kfilemetadata/kfilemetadata_poextractor.so
 lib/plugins/kf5/kfilemetadata/kfilemetadata_popplerextractor.so
 lib/plugins/kf5/kfilemetadata/kfilemetadata_taglibextractor.so
+share/locale/ar/LC_MESSAGES/kfilemetadata.mo
 share/locale/bg/LC_MESSAGES/kfilemetadata.mo
 share/locale/bs/LC_MESSAGES/kfilemetadata.mo
 share/locale/ca/LC_MESSAGES/kfilemetadata.mo

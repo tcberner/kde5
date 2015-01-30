@@ -1,7 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=	kfilemetadata
-PORTVERSION=	5.5.95
+PORTVERSION=	5.6.0
 
 CATEGORIES=	devel # kde-plasma
 COMMENT=	KDE5 kfilemetadata 

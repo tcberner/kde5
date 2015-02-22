@@ -1,5 +1,4 @@
 bin/muon-discover
-bin/muon-exporter
 bin/muon-updater
 lib/libMuonNotifiers.so
 lib/libmuonprivate.so

@@ -4,7 +4,7 @@ PORTNAME=	kfilemetadata
 PORTVERSION=	5.6.0
 
 CATEGORIES=	devel # kde-plasma
-COMMENT=	KDE5 kfilemetadata 
+COMMENT=	KDE5 kfilemetadata
 
 LIB_DEPENDS=	libpoppler-qt5.so:${PORTSDIR}/graphics/poppler-qt5 \
 		libtag.so:${PORTSDIR}/audio/taglib \

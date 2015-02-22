@@ -4,6 +4,8 @@ PORTNAME=	kdeclarative
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 declarative
 
+LIB_DEPENDS=	libepoxy.so:${PORTSDIR}/graphics/libepoxy
+
 USE_QT5=	core dbus gui network qml quick widgets xml
 USE_KDE5=	attica auth bookmarks codecs completion config configwidgets \
 		coreaddons dbusaddons ecm globalaccel guiaddons i18n \

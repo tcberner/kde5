@@ -2,7 +2,7 @@
 
 PORTNAME=	powerdevil
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 powerdevil 
+COMMENT=	KDE5 powerdevil
 
 USE_QT5=	core dbus gui network printsupport \
 		widgets x11extras xml

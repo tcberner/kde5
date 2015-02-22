@@ -2,7 +2,7 @@
 
 PORTNAME=	libkscreen
 CATEGORIES=	x11 # kde-plasma
-COMMENT=	KDE5 libkscreen 
+COMMENT=	KDE5 libkscreen
 
 USE_XORG=	x11 xrandr
 

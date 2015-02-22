@@ -29,6 +29,7 @@ lib/libKF5SonnetCore.so.%%KDE5_FRAMEWORKS_VERSION%%
 lib/libKF5SonnetUi.so
 lib/libKF5SonnetUi.so.5
 lib/libKF5SonnetUi.so.%%KDE5_FRAMEWORKS_VERSION%%
+lib/plugins/kf5/sonnet/hunspell.so
 mkspecs/modules/qt_SonnetCore.pri
 mkspecs/modules/qt_SonnetUi.pri
 share/kf5/sonnet/trigrams.map

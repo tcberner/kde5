@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	ktextwidgets 
+PORTNAME=	ktextwidgets
 CATEGORIES=	x11-toolkits # kde-framework
 COMMENT=	KDE5 text widgets
 

@@ -2,7 +2,6 @@ bin/kcheckrunning
 bin/kcminit
 bin/kcminit_startup
 bin/kdostartupconfig5
-bin/kglobalaccel5
 bin/klipper
 bin/krunner
 bin/ksmserver
@@ -62,7 +61,6 @@ lib/libexec/kscreenlocker_greet
 lib/libexec/ksyncdbusenv
 lib/libkdeinit5_kcminit.so
 lib/libkdeinit5_kcminit_startup.so
-lib/libkdeinit5_kglobalaccel5.so
 lib/libkdeinit5_klipper.so
 lib/libkdeinit5_ksmserver.so
 lib/libkdeinit5_kuiserver5.so
@@ -170,7 +168,6 @@ share/dbus-1/interfaces/org.kde.KSplash.xml
 share/dbus-1/interfaces/org.kde.PlasmaShell.xml
 share/dbus-1/interfaces/org.kde.krunner.App.xml
 share/dbus-1/services/kf5_org.kde.kuiserver.service
-share/dbus-1/services/org.kde.kglobalaccel.service
 share/dbus-1/services/org.kde.krunner.service
 share/desktop-directories/kf5-development-translation.directory
 share/desktop-directories/kf5-development-webdevelopment.directory
@@ -232,7 +229,6 @@ share/kservices5/kded/remotedirnotify.desktop
 share/kservices5/kded/solidautoeject.desktop
 share/kservices5/kded/soliduiserver.desktop
 share/kservices5/kded/statusnotifierwatcher.desktop
-share/kservices5/kglobalaccel5.desktop
 share/kservices5/kuiserver.desktop
 share/kservices5/plasma-applet-org.kde.plasma.activitybar.desktop
 share/kservices5/plasma-applet-org.kde.plasma.analogclock.desktop
@@ -415,6 +411,7 @@ share/locale/ar/LC_MESSAGES/plasma_runner_webshortcuts.mo
 share/locale/ar/LC_MESSAGES/plasma_runner_windowedwidgets.mo
 share/locale/ar/LC_MESSAGES/plasma_runner_windows.mo
 share/locale/ar/LC_MESSAGES/plasmashell.mo
+share/locale/ar/LC_MESSAGES/screenlocker_kcm.mo
 share/locale/ar/LC_MESSAGES/soliduiserver.mo
 share/locale/ast/LC_MESSAGES/drkonqi.mo
 share/locale/ast/LC_MESSAGES/freespacenotifier.mo
@@ -1542,6 +1539,7 @@ share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.devicenotifier.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.lock_logout.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.notifications.mo
+share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.panelspacer.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.systemtray.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_quicklaunch.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_system-monitor.mo
@@ -1552,6 +1550,7 @@ share/locale/gl/LC_MESSAGES/plasma_engine_keystate.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_mpris2.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_network.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_notifications.mo
+share/locale/gl/LC_MESSAGES/plasma_engine_powermanagement.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_rss.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_share.mo
 share/locale/gl/LC_MESSAGES/plasma_engine_soliddevice.mo

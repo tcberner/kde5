@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kcrash 
+PORTNAME=	kcrash
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 crash
 

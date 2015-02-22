@@ -2,7 +2,7 @@
 
 PORTNAME=	plasma-desktop
 CATEGORIES=	x11 # kde-plasma
-COMMENT=	KDE5 plasma-desktop 
+COMMENT=	KDE5 plasma-desktop
 
 USE_QT5=	concurrent core dbus gui network printsupport \
 		qml quick svg widgets x11extras xml

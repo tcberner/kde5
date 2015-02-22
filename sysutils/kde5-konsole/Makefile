@@ -2,7 +2,7 @@
 
 PORTNAME=	konsole
 CATEGORIES=	sysutils # kde-applications
-COMMENT=	KDE5 konsole 
+COMMENT=	KDE5 konsole
 PKGNAMEPREFIX=	kde5-
 
 USE_QT5=	core dbus gui script scripttools sql widgets

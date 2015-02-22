@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kservice 
+PORTNAME=	kservice
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 service
 

@@ -1,8 +1,8 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kauth 
+PORTNAME=	kauth
 CATEGORIES=	devel # kde-framework
-COMMENT=	KDE5 auth 
+COMMENT=	KDE5 auth
 
 USE_QT5=	core dbus gui linguisttools polkit5 widgets
 USE_KDE5=	coreaddons ecm kdeprefix

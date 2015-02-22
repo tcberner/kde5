@@ -5,7 +5,7 @@ PORTVERSION=	${KDE5_ECM_VERSION}
 CATEGORIES=	devel # kde-framework
 COMMENT=	Extra Modules for Cmake
 
-USE_KDE5=	kdeprefix 
+USE_KDE5=	kdeprefix
 USES=		cmake:outsource tar:xz
 
 CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF 	\
@@ -16,4 +16,4 @@ CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF 	\
 INSTALL_TARGET=install # does not have install/strip target
 
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
-.include <bsd.port.mk> 
+.include <bsd.port.mk>

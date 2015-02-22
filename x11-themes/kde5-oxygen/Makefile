@@ -3,7 +3,7 @@
 PORTNAME=	oxygen
 PORTVERSION=	${KDE5_VERSION}
 CATEGORIES=	x11-themes # kde-plasma
-COMMENT=	KDE5 oxygen 
+COMMENT=	KDE5 oxygen
 
 USE_QT5=	core dbus gui widgets x11extras xml
 USE_KDE5=	auth codecs completion config configwidgets \

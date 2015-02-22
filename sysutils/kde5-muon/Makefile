@@ -2,7 +2,7 @@
 
 PORTNAME=	muon
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 muon 
+COMMENT=	KDE5 muon
 
 USE_QT5=	concurrent core dbus gui network qml quick svg widgets xml
 USE_KDE5=	attica config configwidgets coreaddons dbusaddons \

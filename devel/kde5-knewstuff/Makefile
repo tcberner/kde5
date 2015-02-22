@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	knewstuff 
+PORTNAME=	knewstuff
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 newstuff
 

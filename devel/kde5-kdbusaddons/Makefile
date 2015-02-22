@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kdbusaddons 
+PORTNAME=	kdbusaddons
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 dbus addons
 

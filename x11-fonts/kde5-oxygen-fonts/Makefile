@@ -2,7 +2,7 @@
 
 PORTNAME=	oxygen-fonts
 CATEGORIES=	x11-fonts # kde-plasma
-COMMENT=	KDE5 oxygen-fonts 
+COMMENT=	KDE5 oxygen-fonts
 
 BUILD_DEPENDS=	fontforge:${PORTSDIR}/print/fontforge
 

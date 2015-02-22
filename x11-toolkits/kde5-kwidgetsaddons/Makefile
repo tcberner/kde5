@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kwidgetsaddons 
+PORTNAME=	kwidgetsaddons
 CATEGORIES=	x11-toolkits # kde-framework
 COMMENT=	KDE5 widgets
 

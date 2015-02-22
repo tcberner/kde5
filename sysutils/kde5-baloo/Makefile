@@ -4,7 +4,7 @@ PORTNAME=	baloo
 PORTVERSION=	5.6.0
 
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 baloo 
+COMMENT=	KDE5 baloo
 
 LIB_DEPENDS=	libxapian.so:${PORTSDIR}/databases/xapian-core
 

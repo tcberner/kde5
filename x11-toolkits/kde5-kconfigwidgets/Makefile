@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kconfigwidgets 
+PORTNAME=	kconfigwidgets
 CATEGORIES=	x11-toolkits # kde-framework
 COMMENT=	KDE5 config widgets
 

@@ -1,8 +1,8 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kio-extras 
+PORTNAME=	kio-extras
 CATEGORIES=	devel # kde-plasma
-COMMENT=	KDE5 kio-extras 
+COMMENT=	KDE5 kio-extras
 
 USE_QT5=	core dbus gui network printsupport widgets xml
 USE_KDE5=	archive attica auth bookmarks codecs completion config \

@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kcodecs 
+PORTNAME=	kcodecs
 CATEGORIES=	textproc # kde-framework
 COMMENT=	KDE5 codecs
 

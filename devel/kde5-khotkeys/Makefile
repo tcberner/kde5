@@ -2,7 +2,7 @@
 
 PORTNAME=	khotkeys
 CATEGORIES=	devel # kde-plasma
-COMMENT=	KDE5 khotkeys 
+COMMENT=	KDE5 khotkeys
 
 USE_QT5=	core dbus linguisttools
 USE_KDE5=	ecm itemmodels kdeprefix plasma-framework plasma-workspace

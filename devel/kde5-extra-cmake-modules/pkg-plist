@@ -5,6 +5,7 @@ share/ECM/find-modules/FindEGL.cmake
 share/ECM/find-modules/FindKF5.cmake
 share/ECM/find-modules/FindLibGit2.cmake
 share/ECM/find-modules/FindOpenEXR.cmake
+share/ECM/find-modules/FindPng2Ico.cmake
 share/ECM/find-modules/FindQtWaylandScanner.cmake
 share/ECM/find-modules/FindSharedMimeInfo.cmake
 share/ECM/find-modules/FindWayland.cmake
@@ -15,6 +16,7 @@ share/ECM/kde-modules/KDECMakeSettings.cmake
 share/ECM/kde-modules/KDECompilerSettings.cmake
 share/ECM/kde-modules/KDEFrameworkCompilerSettings.cmake
 share/ECM/kde-modules/KDEInstallDirs.cmake
+share/ECM/modules/ECMAddAppIcon.cmake
 share/ECM/modules/ECMAddTests.cmake
 share/ECM/modules/ECMCoverageOption.cmake
 share/ECM/modules/ECMCreateQmFromPoFiles.cmake
@@ -32,5 +34,9 @@ share/ECM/modules/ECMPoQmTools.cmake
 share/ECM/modules/ECMQmLoader.cpp.in
 share/ECM/modules/ECMQueryQmake.cmake
 share/ECM/modules/ECMSetupVersion.cmake
+share/ECM/modules/ECMUninstallTarget.cmake
 share/ECM/modules/ECMUseFindModules.cmake
 share/ECM/modules/ECMVersionHeader.h.in
+share/ECM/modules/ecm_uninstall.cmake.in
+share/ECM/toolchain/Android.cmake
+share/ECM/toolchain/deployment-file.json.in

@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.qt.mk 378033 2015-01-28 01:15:22Z rakuco $
+# $FreeBSD: head/Mk/bsd.qt.mk 379400 2015-02-19 22:08:03Z makc $
 #
 # Port variables:
 # USE_QT*			- List of Qt modules to depend on, with optional '_build'
@@ -88,7 +88,7 @@ MASTER_SITE_SUBDIR=	official_releases/qt/${_QT_VERSION:R}/${_QT_VERSION}/submodu
 DISTNAME=		${QT_DIST:S,^,qt,:S,$,-opensource-src-${_QT_VERSION},}
 DISTFILES=		${DISTNAME:S,$,${EXTRACT_SUFX},}
 DIST_SUBDIR=		KDE/Qt/${_QT_VERSION}
-USE_XZ=			yes
+USES+=			tar:xz
 
 .  if ${.TARGETS:Mmakesum} || ${.TARGETS:Mfetch} && \
 	defined(DISABLE_SIZE) && defined(NO_CHECKSUM)
@@ -405,6 +405,15 @@ opengl_PATH=		${QT_LIBDIR}/libQt${_QT_LIBVER}OpenGL.so
 paths_PORT=		sysutils/qt5-qtpaths
 paths_PATH=		${QT_BINDIR}/qtpaths
 
+
+phonon5_PORT=           multimedia/qt5-phonon
+phonon5_PATH=           ${QT_LIBDIR}/libphonon4qt5.so
+
+polkit5_PORT=           sysutils/polkit-qt5
+polkit5_PATH=           ${QT_LIBDIR}/libpolkit-qt5-core-1.so
+
+
+
 pixeltool_PORT=		graphics/${_QT_RELNAME}-pixeltool
 pixeltool_PATH=		${QT_BINDIR}/pixeltool
 
@@ -413,12 +422,6 @@ phonon_PATH=		${QT_LIBDIR}/libphonon.so
 
 phonon-gst_PORT=	multimedia/phonon-gstreamer
 phonon-gst_PATH=	${QT_PLUGINDIR}/phonon_backend/libphonon_gstreamer.so
-
-phonon5_PORT=		multimedia/qt5-phonon
-phonon5_PATH=		${QT_LIBDIR}/libphonon4qt5.so
-
-polkit5_PORT=		sysutils/polkit-qt5
-polkit5_PATH=		${QT_LIBDIR}/libpolkit-qt5-core-1.so
 
 porting_PORT=		devel/${_QT_RELNAME}-porting
 porting_PATH=		${QT_BINDIR}/qt3to4

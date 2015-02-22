@@ -128,6 +128,7 @@ include/KF5/KIOFileWidgets/KAbstractViewAdapter
 include/KF5/KIOFileWidgets/KDirOperator
 include/KF5/KIOFileWidgets/KDirSortFilterProxyModel
 include/KF5/KIOFileWidgets/KEncodingFileDialog
+include/KF5/KIOFileWidgets/KFileCopyToMenu
 include/KF5/KIOFileWidgets/KFileFilterCombo
 include/KF5/KIOFileWidgets/KFilePlacesModel
 include/KF5/KIOFileWidgets/KFilePlacesView
@@ -144,6 +145,7 @@ include/KF5/KIOFileWidgets/kabstractviewadapter.h
 include/KF5/KIOFileWidgets/kdiroperator.h
 include/KF5/KIOFileWidgets/kdirsortfilterproxymodel.h
 include/KF5/KIOFileWidgets/kencodingfiledialog.h
+include/KF5/KIOFileWidgets/kfilecopytomenu.h
 include/KF5/KIOFileWidgets/kfilefiltercombo.h
 include/KF5/KIOFileWidgets/kfileplacesmodel.h
 include/KF5/KIOFileWidgets/kfileplacesview.h
@@ -248,6 +250,7 @@ lib/libKF5KIOWidgets.so
 lib/libKF5KIOWidgets.so.5
 lib/libKF5KIOWidgets.so.%%KDE5_FRAMEWORKS_VERSION%%
 lib/libexec/kf5/kio_http_cache_cleaner
+lib/libexec/kf5/kiod5
 lib/libexec/kf5/kioexec
 lib/libexec/kf5/kioslave
 lib/libexec/kf5/kpac_dhcp_helper
@@ -256,7 +259,6 @@ lib/plugins/kcm_trash.so
 lib/plugins/kcm_webshortcuts.so
 lib/plugins/kf5/kded/kcookiejar.so
 lib/plugins/kf5/kded/kpasswdserver.so
-lib/plugins/kf5/kded/kssld.so
 lib/plugins/kf5/kded/proxyscout.so
 lib/plugins/kf5/kio/file.so
 lib/plugins/kf5/kio/ftp.so
@@ -264,6 +266,7 @@ lib/plugins/kf5/kio/ghelp.so
 lib/plugins/kf5/kio/help.so
 lib/plugins/kf5/kio/http.so
 lib/plugins/kf5/kio/trash.so
+lib/plugins/kf5/kiod/kssld.so
 lib/plugins/kf5/urifilters/fixhosturifilter.so
 lib/plugins/kf5/urifilters/kshorturifilter.so
 lib/plugins/kf5/urifilters/kuriikwsfilter.so
@@ -280,6 +283,7 @@ share/dbus-1/interfaces/kf5_org.kde.KDirNotify.xml
 share/dbus-1/interfaces/kf5_org.kde.KPasswdServer.xml
 share/dbus-1/interfaces/kf5_org.kde.KSlaveLauncher.xml
 share/dbus-1/interfaces/kf5_org.kde.kio.FileUndoManager.xml
+share/dbus-1/services/org.kde.kiod5.service
 share/doc/HTML/en/kioslave5/data/index.cache.bz2
 share/doc/HTML/en/kioslave5/data/index.docbook
 share/doc/HTML/en/kioslave5/file/index.cache.bz2
@@ -314,7 +318,6 @@ share/kservices5/https.protocol
 share/kservices5/kcmtrash.desktop
 share/kservices5/kded/kcookiejar.desktop
 share/kservices5/kded/kpasswdserver.desktop
-share/kservices5/kded/kssld.desktop
 share/kservices5/kded/proxyscout.desktop
 share/kservices5/kshorturifilter.desktop
 share/kservices5/kuriikwsfilter.desktop

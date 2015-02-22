@@ -1,8 +1,8 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	milou 
+PORTNAME=	milou
 CATEGORIES=	deskutils # kde-plasma
-COMMENT=	KDE5 milou 
+COMMENT=	KDE5 milou
 
 USE_QT5=	core dbus gui network qml script widgets xml
 USE_KDE5=	attica auth bookmarks codecs completion config \

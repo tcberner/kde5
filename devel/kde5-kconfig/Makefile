@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kconfig 
+PORTNAME=	kconfig
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 configuration framework
 

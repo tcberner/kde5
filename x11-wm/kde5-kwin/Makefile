@@ -2,7 +2,7 @@
 
 PORTNAME=	kwin
 CATEGORIES=	x11-wm # kde-plasma
-COMMENT=	KDE5 kwin 
+COMMENT=	KDE5 kwin
 
 LIB_DEPENDS=	libEGL.so.1:${PORTSDIR}/graphics/libEGL \
 		libXcursor.so.1:${PORTSDIR}/x11/libXcursor \

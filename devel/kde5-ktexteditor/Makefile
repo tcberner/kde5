@@ -2,7 +2,7 @@
 
 PORTNAME=	ktexteditor
 CATEGORIES=	devel # kde-framework
-COMMENT=	KDE5 texteditor 
+COMMENT=	KDE5 texteditor
 
 
 LIB_DEPENDS=	libgit2.so:${PORTSDIR}/devel/libgit2

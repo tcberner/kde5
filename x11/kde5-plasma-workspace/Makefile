@@ -1,19 +1,19 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	plasma-workspace 
+PORTNAME=	plasma-workspace
 CATEGORIES=	x11 # kde-plasma
 
 RUN_DEPENDS=	iceauth:${PORTSDIR}/x11/iceauth \
 		xsetroot:${PORTSDIR}/x11/xsetroot \
 		xset:${PORTSDIR}/x11/xset \
 		xmessage:${PORTSDIR}/x11/xmessage \
-		${LOCALBASE}/libdata/pkgconfig/xkeyboard-config.pc:${PORTSDIR}/x11/xkeyboard-config 
+		${LOCALBASE}/libdata/pkgconfig/xkeyboard-config.pc:${PORTSDIR}/x11/xkeyboard-config
 # TODO: is anyone really using libdbusmen? -- distfile has to be fetched
 # from launchpad, official tarballs are too old.
-#LIB_DEPENDS=	libdbusmenu-qt5.so:${PORTSDIR}/devel/libdbusmenu-qt5 
+#LIB_DEPENDS=	libdbusmenu-qt5.so:${PORTSDIR}/devel/libdbusmenu-qt5
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE5 plasma-workspace 
+COMMENT=	KDE5 plasma-workspace
 
 USE_QT5=	core dbus gui network qdbus qml paths quick \
 		quickcontrols script scripttools widgets xml

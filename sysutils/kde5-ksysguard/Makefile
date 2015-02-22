@@ -2,7 +2,7 @@
 
 PORTNAME=	ksysguard
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 ksysguard 
+COMMENT=	KDE5 ksysguard
 
 USE_QT5=	core dbus gui network printsupport widgets xml
 USE_KDE5=	archive attica auth bookmarks codecs completion \

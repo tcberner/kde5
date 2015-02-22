@@ -3,9 +3,9 @@
 PORTNAME=	kde-gtk-config
 PORTVERSION=	${KDE5_VERSION}
 CATEGORIES=	x11-themes # kde-plasma
-COMMENT=	KDE5 gtk config 
+COMMENT=	KDE5 gtk config
 
-USE_GNOME=	gtk20 gtk30 glib20 
+USE_GNOME=	gtk20 gtk30 glib20
 USE_QT5=	core widgets
 USE_KDE5=	archive configwidgets ecm i18n kcmutils kdeprefix newstuff
 

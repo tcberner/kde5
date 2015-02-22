@@ -4,7 +4,7 @@ PORTNAME=	khtml
 CATEGORIES=	www # kde-framework
 COMMENT=	KDE5 khtml
 MASTER_SITE_SUBDIR?=	stable/frameworks/${KDE5_FRAMEWORKS_VERSION:R}/portingAids
- 
+
 USE_QT5=	core dbus gui network printsupport widgets x11extras xml
 USE_KDE5=	archive attica auth bookmarks codecs completion config \
 		configwidgets coreaddons dbusaddons ecm globalaccel guiaddons \

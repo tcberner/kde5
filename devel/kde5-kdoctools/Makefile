@@ -1,6 +1,6 @@
-# Created by: Tobias Berner <tcberner@gmail.com> 
+# Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	kdoctools 
+PORTNAME=	kdoctools
 CATEGORIES=	devel # kde-framework
 COMMENT=	KDE5 doctools
 

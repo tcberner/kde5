@@ -288,6 +288,7 @@ share/katepart5/syntax/rest.xml
 share/katepart5/syntax/rexx.xml
 share/katepart5/syntax/rhtml.xml
 share/katepart5/syntax/rib.xml
+share/katepart5/syntax/rmarkdown.xml
 share/katepart5/syntax/roff.xml
 share/katepart5/syntax/rpmspec.xml
 share/katepart5/syntax/rsiidl.xml

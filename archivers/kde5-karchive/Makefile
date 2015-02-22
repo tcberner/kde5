@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	karchive 
+PORTNAME=	karchive
 CATEGORIES=	archivers # kde-framework
 
 COMMENT=	KDE5 archive

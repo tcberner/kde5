@@ -142,6 +142,7 @@ share/locale/xh/LC_MESSAGES/kservice5.mo
 share/locale/zh_CN/LC_MESSAGES/kservice5.mo
 share/locale/zh_HK/LC_MESSAGES/kservice5.mo
 share/locale/zh_TW/LC_MESSAGES/kservice5.mo
+share/man/it/man8/kbuildsycoca5.8
 share/man/man8/desktoptojson.8
 share/man/man8/kbuildsycoca5.8
 share/man/nl/man8/desktoptojson.8

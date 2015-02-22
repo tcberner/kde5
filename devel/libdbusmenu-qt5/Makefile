@@ -15,7 +15,7 @@ COMMENT=	KDE5 libdbusmenu-qt
 USE_QT5=	core dbus
 USE_KDE5=	ecm kdeprefix
 
-LIB_DEPENDS=	libqjson.so.0:${PORTSDIR}/devel/qt5-qjson 
+LIB_DEPENDS=	libqjson.so.0:${PORTSDIR}/devel/qt5-qjson
 
 USE_LDCONFIG=	yes
 USES=		cmake tar:bzip2

@@ -1,6 +1,6 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
-PORTNAME=	attica 
+PORTNAME=	attica
 CATEGORIES=	x11-toolkits # kde-framework
 COMMENT=	Open Collaboration Services API library KDE5 version
 

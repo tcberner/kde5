@@ -2,7 +2,7 @@
 
 PORTNAME=	kde-cli-tools
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 kde-cli-tools 
+COMMENT=	KDE5 kde-cli-tools
 
 USE_QT5=	core dbus gui svg widgets x11extras
 USE_KDE5=	config ecm emoticons i18n iconthemes \

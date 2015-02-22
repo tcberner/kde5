@@ -39,10 +39,10 @@ Kde5_Pre_Include=	bsd.kde5.mk
 KDE5_VERSION?=			5.2.0
 KDE5_BRANCH?=           	stable
 
-KDE5_FRAMEWORKS_VERSION?=	5.6.0
+KDE5_FRAMEWORKS_VERSION?=	5.7.0
 KDE5_FRAMEWORKS_BRANCH?= 	stable
 
-KDE5_ECM_VERSION=		1.6.0   # This could probably go into the ecm-port
+KDE5_ECM_VERSION=		1.7.0   # This could probably go into the ecm-port
 
 KDE5_PREFIX?=			${LOCALBASE}
 

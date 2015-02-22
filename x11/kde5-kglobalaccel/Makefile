@@ -5,7 +5,7 @@ CATEGORIES=	x11 # kde-framework
 COMMENT=	KDE5 global accels
 
 USE_QT5=	core dbus gui linguisttools widgets x11extras
-USE_KDE5=	ecm kdeprefix
+USE_KDE5=	ecm config coreaddons crash dbusaddons i18n kdeprefix
 		
 # hopefully fix segfault -- still necessary? TODO
 CXXFLAGS+=	-fno-use-cxa-atexit

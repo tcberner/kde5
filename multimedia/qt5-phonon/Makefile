@@ -11,7 +11,7 @@ DIST_SUBDIR=	KDE
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt5 bindings for phonon
 
-USE_QT5=	buildtools_build core dbus declarative gui qmake_build widgets 
+USE_QT5=	buildtools_build core dbus declarative gui qmake_build widgets
 
 USES=		cmake tar:xz
 CMAKE_ARGS=	-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT:BOOL=TRUE \

@@ -20,7 +20,7 @@ GH_COMMIT=	500f51b # 500f51b32fac7f06e2877e6053176e5dd6e1935f
 
 LICENSE=	LGPL21
 
-USE_QT5=	qmake_build buildtools core 
+USE_QT5=	qmake_build buildtools core
 USES=		cmake:outsource tar:bzip2
 
 USE_LDCONFIG=	yes

@@ -2,7 +2,7 @@
 
 PORTNAME=	gwenview
 CATEGORIES=	graphics # kde-applications
-COMMENT=	KDE5 gwenview 
+COMMENT=	KDE5 gwenview
 PKGNAMEPREFIX=	kde5-
 
 USE_QT5=	buildtools_build core dbus qmake_build

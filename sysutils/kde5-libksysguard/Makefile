@@ -2,7 +2,7 @@
 
 PORTNAME=	libksysguard
 CATEGORIES=	sysutils # kde-plasma
-COMMENT=	KDE5 libksysguard 
+COMMENT=	KDE5 libksysguard
 
 USE_QT5=	core dbus gui network opengl printsupport qml \
 		quick script webkit widgets x11extras xml

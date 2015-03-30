@@ -15,8 +15,8 @@ RUN_DEPENDS=	iceauth:${PORTSDIR}/x11/iceauth \
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE5 plasma-workspace
 
-USE_QT5=	core dbus gui network qdbus qml paths quick \
-		quickcontrols script scripttools widgets xml
+USE_QT5=	core dbus gui network qdbus qml paths phonon5 quick \
+		quickcontrols script scripttools webkit widgets xml
 USE_KDE5=	attica auth baloo bookmarks codecs completion \
 		config configwidgets coreaddons dbusaddons ecm \
 		globalaccel guiaddons i18n iconthemes idletime \
@@ -29,6 +29,12 @@ USE_KDE5=	attica auth baloo bookmarks codecs completion \
 USE_XORG=	xft xkbfile
 
 CMAKE_ARGS+=	-DBUILD_TESTING:BOOL=OFF
+
+OPTIONS_DEFINE=	GPS DOCS NLS
+OPTIONS_SUB=	YES
+
+GPS_LIB_DEPENDS=	libgps.so:${PORTSDIR}/astro/gpsd
+GPS_DESC=		GPS support for geolocation
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

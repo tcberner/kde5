@@ -8,5 +8,8 @@ USE_QT5=	core dbus gui widgets xml
 USE_KDE5=	archive auth codecs config coreaddons doctools ecm guiaddons \
 		i18n kdeprefix widgetsaddons
 
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

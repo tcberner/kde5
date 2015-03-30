@@ -13,11 +13,13 @@ USE_KDE5=	archive attica auth bookmarks codecs completion config \
 		solid sonnet textwidgets unitconversion wayland widgetsaddons \
 		windowsystem xmlgui
 
-LIB_DEPENDS=	libEGL.so:${PORTSDIR}/graphics/libEGL \
-		libGLU.so:${PORTSDIR}/graphics/libGLU
+USE_GL=		egl glu
 
 # TODO	-- this should be handled correctly...
 LDFLAGS+=-ldevinfo
+
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

@@ -12,6 +12,9 @@ USE_KDE5=	config doctools ecm guiaddons i18n init \
 		texteditor threadweaver windowsystem \
 		xmlgui
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=    YES
+
 LIB_DEPENDS=	libgit2.so:${PORTSDIR}/devel/libgit2
 
 .include "${.CURDIR}/../../x11/kde-applications/bsd.kde-applications.mk"

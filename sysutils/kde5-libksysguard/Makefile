@@ -20,6 +20,9 @@ USE_KDE5=	archive attica auth bookmarks codecs completion \
 CFLAGS+=	-I/usr/local/include/KF5/KDELibs4Support \
 		-I/usr/local/include/KF5/KConfigCore
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

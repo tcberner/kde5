@@ -14,5 +14,10 @@ USE_KDE5=	archive attica auth bookmarks codecs completion config \
 		solid sonnet textwidgets unitconversion widgetsaddons \
 		windowsystem xmlgui
 
+BUILD_DEPENDS=	p5-URI>=0:${PORTSDIR}/net/p5-URI
+
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

@@ -18,6 +18,9 @@ USE_KDE5=	archive attica auth bookmarks codecs \
 		unitconversion widgetsaddons windowsystem \
 		xmlgui
 
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

@@ -7,5 +7,8 @@ COMMENT=	KDE5 sshaskpass frontend
 USE_QT5=	core
 USE_KDE5=	coreaddons ecm i18n kdeprefix wallet widgetsaddons
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

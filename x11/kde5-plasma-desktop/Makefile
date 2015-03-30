@@ -20,6 +20,9 @@ USE_KDE5=	activities archive attica auth bookmarks codecs \
 # needed for one of the source files (TODO: fetch upstream patch)
 CXXFLAGS=	-ftemplate-depth=512
 
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

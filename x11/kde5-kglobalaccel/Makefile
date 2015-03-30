@@ -6,9 +6,12 @@ COMMENT=	KDE5 global accels
 
 USE_QT5=	core dbus gui linguisttools widgets x11extras
 USE_KDE5=	ecm config coreaddons crash dbusaddons i18n kdeprefix
-		
+
 # hopefully fix segfault -- still necessary? TODO
 CXXFLAGS+=	-fno-use-cxa-atexit
+
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
 
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

@@ -9,6 +9,9 @@ USE_KDE5=	config ecm emoticons i18n iconthemes \
 		init  itemmodels kcmutils \
 		kdelibs4support kdesu windowsystem
 
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

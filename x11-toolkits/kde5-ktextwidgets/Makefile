@@ -10,5 +10,8 @@ USE_KDE5=	auth codecs completion config configwidgets \
 		iconthemes itemviews kdeprefix service sonnet \
 		widgetsaddons windowsystem
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

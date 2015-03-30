@@ -1,7 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=	baloo
-PORTVERSION=	5.6.0
+PORTVERSION=	5.6.2
 
 CATEGORIES=	sysutils # kde-plasma
 COMMENT=	KDE5 baloo
@@ -16,6 +16,11 @@ USE_KDE5=	archive attica auth bookmarks codecs completion config \
 		jobwidgets kcmutils kdelibs4support kdeprefix kio \
 		notifications parts service solid sonnet textwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
+
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
+PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

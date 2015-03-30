@@ -11,6 +11,11 @@ USE_KDE5=	attica auth bookmarks codecs completion config \
 		itemviews jobwidgets kdeprefix kio plasma-framework \
 		runner service solid sonnet textwidgets widgetsaddons \
 		windowsystem xmlgui
+		
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
+CFLAGS+=	-I/usr/local/include/KF5/KService
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

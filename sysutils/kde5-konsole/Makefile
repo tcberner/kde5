@@ -14,6 +14,9 @@ USE_KDE5=	ecm emoticons i18n iconthemes init itemmodels \
 # TODO: kinfog_getfile
 LDFLAGS+=	-lutil
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde-applications/bsd.kde-applications.mk"
 .include <bsd.port.mk>
 

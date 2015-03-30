@@ -9,6 +9,9 @@ USE_GNOME=	gtk20 gtk30 glib20
 USE_QT5=	core widgets
 USE_KDE5=	archive configwidgets ecm i18n kcmutils kdeprefix newstuff
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>
 

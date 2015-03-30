@@ -4,11 +4,12 @@ PORTNAME=	kwin
 CATEGORIES=	x11-wm # kde-plasma
 COMMENT=	KDE5 kwin
 
-LIB_DEPENDS=	libEGL.so.1:${PORTSDIR}/graphics/libEGL \
-		libXcursor.so.1:${PORTSDIR}/x11/libXcursor \
+LIB_DEPENDS=	libXcursor.so.1:${PORTSDIR}/x11/libXcursor \
 		libepoxy.so:${PORTSDIR}/graphics/libepoxy
 
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:${PORTSDIR}/multimedia/v4l_compat
+
+USE_GL=		egl
 
 USE_QT5=	concurrent core dbus gui multimedia network qml \
 		quick script uitools widgets x11extras xml
@@ -20,6 +21,9 @@ USE_KDE5=	activities archive attica auth bookmarks codecs \
 		newstuff notifications plasma-framework service \
 		solid sonnet textwidgets wayland widgetsaddons \
 		windowsystem xmlgui
+
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

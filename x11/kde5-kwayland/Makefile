@@ -2,7 +2,7 @@
 
 PORTNAME=	kwayland
 CATEGORIES=	x11 # kde-plasma
-COMMENT=	KDE5 kwin
+COMMENT=	KDE5 kwayland
 
 LIB_DEPENDS=	libEGL.so.1:${PORTSDIR}/graphics/libEGL \
 		libXcursor.so.1:${PORTSDIR}/x11/libXcursor \

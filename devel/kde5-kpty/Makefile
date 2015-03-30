@@ -7,5 +7,8 @@ COMMENT=	KDE5 kpty
 USE_QT5=	core
 USE_KDE5=	coreaddons ecm i18n kdeprefix
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

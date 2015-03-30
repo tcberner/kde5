@@ -5,9 +5,9 @@ lib/libkonsoleprivate.so.3
 lib/libkonsoleprivate.so.3.0.1
 lib/plugins/konsolepart.so
 share/applications/org.kde.konsole.desktop
-share/doc/HTML/en/konsole/draganddrop-contextmenu.png
-share/doc/HTML/en/konsole/index.cache.bz2
-share/doc/HTML/en/konsole/index.docbook
+%%DOCS%%share/doc/HTML/en/konsole/draganddrop-contextmenu.png
+%%DOCS%%share/doc/HTML/en/konsole/index.cache.bz2
+%%DOCS%%share/doc/HTML/en/konsole/index.docbook
 share/knotifications5/konsole.notifyrc
 %%DATADIR%%/BlackOnLightYellow.colorscheme
 %%DATADIR%%/BlackOnRandomLight.colorscheme

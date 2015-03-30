@@ -105,3 +105,4 @@ lib/libKF5JSApi.so.%%KDE5_FRAMEWORKS_VERSION%%
 mkspecs/modules/qt_KJS.pri
 mkspecs/modules/qt_KJSApi.pri
 share/kf5/kjs/create_hash_table
+%%DOCS%%share/man/man1/kjs5.1

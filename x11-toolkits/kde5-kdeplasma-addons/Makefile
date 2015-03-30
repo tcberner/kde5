@@ -12,5 +12,8 @@ USE_KDE5=	declarative ecm emoticons init itemmodels kcmutils \
 # TODO: do this better
 USES=		cmake:outsource tar:xz gettext
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

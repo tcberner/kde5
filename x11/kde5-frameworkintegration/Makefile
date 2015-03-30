@@ -12,5 +12,8 @@ USE_KDE5=	attica auth bookmarks codecs completion config configwidgets \
 		windowsystem xmlgui
 USE_XORG=	xcursor
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

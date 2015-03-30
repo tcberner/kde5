@@ -15,5 +15,8 @@ USE_KDE5=	activities archive attica auth bookmarks codecs \
 		kdeprefix kio kpackage service solid sonnet \
 		textwidgets widgetsaddons windowsystem xmlgui
 
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	YES
+
 .include "${.CURDIR}/../../x11/kde5-frameworks/bsd.kde5-frameworks.mk"
 .include <bsd.port.mk>

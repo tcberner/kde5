@@ -1,7 +1,7 @@
 # Created by: Tobias Berner <tcberner@gmail.com>
 
 PORTNAME=	kfilemetadata
-PORTVERSION=	5.6.0
+PORTVERSION=	5.6.2
 
 CATEGORIES=	devel # kde-plasma
 COMMENT=	KDE5 kfilemetadata
@@ -11,9 +11,14 @@ LIB_DEPENDS=	libpoppler-qt5.so:${PORTSDIR}/graphics/poppler-qt5 \
 		libexiv2.so:${PORTSDIR}/graphics/exiv2 \
 		libavutil.so:${PORTSDIR}/multimedia/ffmpeg \
 		libepub.so:${PORTSDIR}/textproc/ebook-tools
-		
+
 USE_QT5=	core dbus xml
 USE_KDE5=	archive config coreaddons dbusaddons ecm i18n kdeprefix service
+
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	YES
+
+PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
 .include "${.CURDIR}/../../x11/kde5-plasma/bsd.kde5-plasma.mk"
 .include <bsd.port.mk>

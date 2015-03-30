@@ -1,3 +1,3 @@
 bin/ksshaskpass
 share/applications/org.kde.ksshaskpass.desktop
-share/man/man1/ksshaskpass.1
+%%DOCS%%share/man/man1/ksshaskpass.1

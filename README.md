@@ -3,6 +3,9 @@ kde5
 
 FreeBSD ports for kde5 frameworks and plasma
 
+Note: frameworks-5.10.0 and plasma-5.3.0 (as well as applications 15.04.0) can be found in the plasma5 branch of area51.
+
+
 ![alt tag](http://user.math.uzh.ch/berner/files/plasma-5.1.95.png)
 kate, gwenview and konsole from kde-applications 14.12
 
